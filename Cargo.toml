@@ -35,8 +35,9 @@ api = ["http", "percent-encoding", "url"]
 v4_2 = [ "k8s-openapi/v1_15" ]
 v4_3 = [ "k8s-openapi/v1_16" ]
 v4_4 = [ "k8s-openapi/v1_17" ]
-v4_5 = [ "k8s-openapi/v1_18" ]
-v4_6 = [ "k8s-openapi/v1_19" ]
+# Currently, https://github.com/ctron/openshift-openapi only supports v4.5 and k8s-openapi feature v1_18,
+# So v4.5 here actually uses the latest version v4.6 and k8s-openapi feature v1_19.
+v4_5 = [ "k8s-openapi/v1_19" ]
 
 [patch.crates-io]
 #k8s-openapi = { git = "https://github.com/Arnavion/k8s-openapi", branch="master" }

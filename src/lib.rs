@@ -465,16 +465,12 @@ mod v4_4;
 #[cfg(feature = "v4_4")]
 pub use self::v4_4::*;
 
+// Currently, https://github.com/ctron/openshift-openapi only supports v4.5,
+// So v4.5 here actually uses the latest version v4.6.
 #[cfg(feature = "v4_5")]
-mod v4_5;
-#[cfg(feature = "v4_5")]
-pub use self::v4_5::*;
-
-#[cfg(feature = "v4_6")]
 mod v4_6;
-#[cfg(feature = "v4_6")]
+#[cfg(feature = "v4_5")]
 pub use self::v4_6::*;
-
 
 include!(concat!(
     env!("OUT_DIR"),
